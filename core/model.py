@@ -33,7 +33,6 @@ class ModelWrapper(MAXModelWrapper):
     MODEL_META_DATA = model_meta
 
     def __init__(self, path=DEFAULT_MODEL_PATH):
-        logger.info('Loading model from: {}...'.format(path))
 
         self.max_seq_length = 128
         self.do_lower_case = True
