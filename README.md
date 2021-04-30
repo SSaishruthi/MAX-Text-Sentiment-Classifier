@@ -1,4 +1,4 @@
-# Detect the sentiment captured in short pieces of text.
+# Detect the sentiment of text.
 
 This tutorial walks you through the process to build and deploy a deep learning model as a microservice using MAX Framework and OpenShift Technologies.
 
@@ -10,8 +10,9 @@ This tutorial walks you through the process to build and deploy a deep learning 
 
 # What is Source-to-Image(S2I)?
 
-Source-to-Image is a toolkit and workflow for building reproducible container images from the source code. S2I produces ready-to-run docker images by injecting source code
-into a container image and letting the conainer prepare that source code for execution.
+Source-to-Image is a toolkit and workflow for building reproducible container images from the source code. S2I produces ready-to-run docker images by injecting source code into a container image and letting the conainer prepare that source code for execution.
+
+![1](images/s2i.png)
 
 # Steps
 
@@ -21,6 +22,12 @@ into a container image and letting the conainer prepare that source code for exe
 APP_FILE=app.py
 ```
 - Login to your OpenShift cluster and open the web console
-- Go to `Developer` view and click on `+Add`. We will be building the image from the source code stored in `Git`. Select `From Git`
-- 
+- Go to `Developer` view and click on `+Add`. We will be building the image from the source code stored in `Git`. Select `From Git`.
+![2](images/img1.png)
+- Provide link to the source code stored in the git. Tool can automatically detect the builder image, make sure `Python` is selected. Provide name for the application and click `Create`.
+![3](images/img2.png)
+- Application will start to build. You can view the logs by clicking on `View Logs`.
+![4](images/img4.png)
+- Once built, click on the route and launch the application.
+![5](images/img5.png)
 
