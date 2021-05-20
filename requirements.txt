@@ -1,5 +1,4 @@
 # python3.6
-python==3.7.10
 tensorflow==1.15.4   # CPU Version of TensorFlow.
 flask-cors==3.0.10
 flask-restx==0.3.0
