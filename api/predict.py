@@ -48,8 +48,10 @@ with open('assets/labels.txt', 'r') as f:
     class_labels = [x.strip() for x in f]
 
 # Creating a JSON response model: https://flask-restplus.readthedocs.io/en/stable/marshalling.html#the-api-model-factory
+'''
 label_prediction = MAX_API.model('LabelPrediction',
                                  {l: fields.Float(required=True, description='Class probability') for l in class_labels})  # noqa - E741
+'''
 
 predict_response = MAX_API.model('ModelPredictResponse', {
     'status': fields.String(required=True, description='Response status message'),
