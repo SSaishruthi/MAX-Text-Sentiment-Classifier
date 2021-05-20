@@ -1,7 +1,7 @@
 # python3.6
 tensorflow==1.15.4   # CPU Version of TensorFlow.
-flask-restx==0.1.1
-flask-cors==3.0.7
+flask-cors==3.0.10
+flask-restx==0.3.0
 maxfw
 Pillow
 flask-restplus
